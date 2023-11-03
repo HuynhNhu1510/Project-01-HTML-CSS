@@ -4,8 +4,8 @@
 
 :root {
     --primary-color: #0F1B4C;
-    --color-background: #fef9e5;
     --color-subtitle: #000339;
+    --color-background: #fffdfd;
 }
 
 html {
@@ -20,6 +20,13 @@ body {
 /*=== COMMON ===*/
 a {
     text-decoration: none;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .content {
@@ -49,7 +56,6 @@ a {
     height: 100vh;
     background: var(--color-background);
     overflow-x: hidden;
-
 }
 
 .navbar {
@@ -91,7 +97,7 @@ a {
 
 .signin-btn {
     color: #0F1B4C;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
@@ -143,7 +149,8 @@ a {
 
 /*=== CLIENTS ===*/
 .clients {
-    margin-top: 122px;
+    margin-top: 80px;
+    padding: 43px 0 64px;
 }
 
 .clients .rows {
@@ -171,7 +178,8 @@ a {
 
 /*=== GUIDES ===*/
 .guides {
-    margin-top: 120px;
+    margin-top: 41px;
+    padding: 79px 0 79px;
 }
 
 .guides .sub-title {
@@ -262,7 +270,9 @@ a {
 /*=== FEATURED === */
 
 .featured {
-    margin-top: 230px;
+    background-color: #F5FAFE;
+    margin-top: 41px;
+    padding: 110px 0;
 }
 
 .featured .sub-title {
@@ -298,3 +308,84 @@ a {
     margin-left: 8px;
 }
 
+.featured .featured-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.featured .featured-item {
+    flex: 1;
+    border-radius: 12px;
+    background-color: #ffffff;
+    /*flex-grow: 1*/
+}
+
+.featured .featured-item .thumb {
+    width: 100%;
+    height: 227px;
+    object-fit: cover;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+.featured .featured-item .body {
+    padding: 17px 23px 24px;
+}
+
+.featured .featured-item .title a {
+    color: var(--color-subtitle);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.5;
+    /* 100% */
+}
+
+.featured .featured-item .desc {
+    --line-clamp: 3;
+    margin-top: 11px;
+    color: #A3A6AB;
+    font-size: 1.4rem;
+    font-weight: 500;
+    word-break: break-all;
+}
+
+.featured .featured-item .info {
+    display: flex;
+    align-items: center;
+    margin-top: 21px;
+}
+
+.featured .featured-item .icon {
+    margin-left: 23px;
+}
+
+.featured .featured-item .icon:first-child {
+    margin-left: 0;
+}
+
+.featured .featured-item .label {
+    margin-left: 8px;
+    color: #4D4D52;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+
+/*=== STATS ===*/
+.stats {
+    margin-top: 75px;
+    padding: 50px 0;
+}
+
+.stats .row {
+    display: flex;
+    align-items: center;
+}
+
+.stats .info .sub-title {
+    color: var(--color-subtitle);
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
