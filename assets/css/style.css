@@ -101,6 +101,7 @@ a {
     font-weight: 500;
 }
 
+/*=== HERO ===*/
 .hero-wrap {
     display: flex;
     flex-direction: column;
@@ -180,6 +181,7 @@ a {
 .guides {
     margin-top: 41px;
     padding: 79px 0 79px;
+
 }
 
 .guides .sub-title {
@@ -323,6 +325,7 @@ a {
 
 .featured .featured-item .thumb {
     width: 100%;
+    /* 100% lúc này bằng kích thước thẻ cha chứ nó */
     height: 227px;
     object-fit: cover;
     border-top-right-radius: 12px;
@@ -381,6 +384,7 @@ a {
 .stats .content {
     width: 1048px;
 }
+
 .stats .row {
     display: flex;
 }
@@ -433,7 +437,7 @@ a {
 
 .stats-trend .seperate {
     margin-top: 25px;
-    height: 1.5px;
+    height: 1.2px;
     background: #E9E9E9;
 }
 
@@ -451,9 +455,9 @@ a {
 }
 
 .stats .avatar {
-    margin-left: -3px;
-    width: 16;
-    height: 16px;
+    margin-left: -5px;
+    width: 16.337px;
+    height: 16.337px;
     object-fit: cover;
     border-radius: 50%;
     background: var(--bg-color, #fff);
@@ -508,4 +512,65 @@ a {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.8;
+}
+
+/*=== QUANTITY ===*/
+.row-qty {
+    padding: 0 32px;
+    margin-top: 110px;
+    justify-content: space-between;
+}
+
+.row .qty {
+    color: #000;
+    font-size: 6.3rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.row .qty-desc {
+    margin-top: 22px;
+    color: #7B8087;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+/*=== SUBSCRIPTION ===*/
+.subscription {
+    margin-top: 90px;
+}
+
+.subscription .body {
+    display: flex;
+    align-items: center;
+    height: 370px;
+    border-radius: 20px;
+    background-color: #063183;
+}
+
+.subscription .info {
+    padding: 110px 80px;
+}
+
+.subscription .sub-title {
+    margin-bottom: 15px;
+    color: #FFF;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1;
+    /* 100% */
+}
+
+.subscription .desc {
+    margin-bottom: 20px;
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.875;
+}
+
+.subscribe-btn {
+    padding: 18px 40px;
+    background-color: #fff;
+    color: var(--color-subtitle);
 }
