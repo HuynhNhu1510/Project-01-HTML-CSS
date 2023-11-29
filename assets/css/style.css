@@ -19,6 +19,7 @@ body {
 
 /*=== COMMON ===*/
 a {
+    display: inline-block;
     text-decoration: none;
 }
 
@@ -170,11 +171,23 @@ a {
     margin-top: 23px;
 }
 
-.img-list {
+.clients .img-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 97px;
+}
+
+.clients .img-list a {
+    display: flex;
+    padding: 0 42px;
+    align-items: center;
+    height: 90px;
+    border-radius: 12px;
+}
+
+.clients .img-list a:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 /*=== GUIDES ===*/
@@ -196,7 +209,7 @@ a {
 .guides .sub-title:before {
     content: '';
     position: absolute;
-    top: -10px;
+    top: -2px;
     left: 50%;
     transform: translateX(-50%);
     width: 41px;
