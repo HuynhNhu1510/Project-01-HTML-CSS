@@ -19,7 +19,6 @@ body {
 
 /*=== COMMON ===*/
 a {
-    display: inline-block;
     text-decoration: none;
 }
 
@@ -179,6 +178,7 @@ a {
 }
 
 .clients .img-list a {
+    display: inline-block;
     display: flex;
     padding: 0 42px;
     align-items: center;
